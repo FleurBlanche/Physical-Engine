@@ -4,14 +4,16 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Events;
 
-public class ObjectScript : MonoBehaviour {
+public class ObjectScript : MonoBehaviour
+{
 
     Vector3 scale;
     float distance;
     Material mat;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         scale = new Vector3(0.1f, 1f, 0.1f);
         mat = new Material(Shader.Find("Sprites/Diffuse"));
     }
@@ -158,9 +160,10 @@ public class ObjectScript : MonoBehaviour {
         ZentryMove.callback.AddListener(Zmove);
         Ztrigger.triggers.Add(ZentryMove);
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 }
